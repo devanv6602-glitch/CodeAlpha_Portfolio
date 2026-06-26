@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Premium Personal Portfolio Website for a Frontend Development internship submission. Includes Home, About, Skills, Projects, Experience, Certifications, Services, Testimonials, Contact, and more." />
+  <meta name="keywords" content="portfolio, frontend developer, web developer, internship, projects, resume, contact" />
+  <title>Portfolio | Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.4/css/all.min.css" integrity="sha512-dYF6+kSgHTWOS7+5g5FnLqvF+aVjNI1BfiWv6l8jWq8QoJ+72PA0/iByYxTgduaY4Ykp9RsGjXUu2x8fr8IhYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__container">
+      <a href="#home" class="logo">Dev<span>Edge</span></a>
+      <nav class="nav" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="theme-toggle" id="theme-button" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="nav-toggle" id="menu-button" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="home section" id="home">
+      <div class="container home__container">
+        <div class="home__content glass">
+          <div class="home__data">
+            <span class="home__subtitle">Hello, I'm</span>
+            <h1 class="home__title">A Frontend Developer</h1>
+            <p class="home__description">Crafting responsive experiences with clean code, captivating design, and modern web performance.</p>
+            <div class="home__roles">
+              <span class="typing-text" id="typing"></span>
+            </div>
+            <div class="home__buttons">
+              <a href="#contact" class="button button--primary">Hire Me</a>
+              <a href="assets/resume.pdf" class="button button--outline" download>Download Resume</a>
+            </div>
+          </div>
+          <div class="home__image">
+            <div class="home__shape"></div>
+            <img src="assets/images/profile.svg" alt="Developer illustration" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container section__container">
+        <div class="section__header">
+          <span>About</span>
+          <h2>Professional Summary</h2>
+        </div>
+        <div class="about__content grid">
+          <div class="about__card glass">
+            <h3>About Me</h3>
+            <p>I build modern, accessible web interfaces with HTML, CSS, and JavaScript. I am passionate about learning new tools, solving problems, and delivering polished digital experiences.</p>
+            <ul class="about__list">
+              <li><strong>Name:</strong> Your Name</li>
+              <li><strong>Location:</strong> Remote / City</li>
+              <li><strong>Email:</strong> <a href="mailto:hello@example.com">hello@example.com</a></li>
+              <li><strong>Role:</strong> Frontend Developer</li>
+            </ul>
+          </div>
+          <div class="about__stats glass">
+            <div class="about__stat">
+              <span>3+</span>
+              <p>Years Experience</p>
+            </div>
+            <div class="about__stat">
+              <span>20+</span>
+              <p>Projects Completed</p>
+            </div>
+            <div class="about__stat">
+              <span>10+</span>
+              <p>Happy Clients</p>
+            </div>
+            <div class="about__stat">
+              <span>5</span>
+              <p>Certifications</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="container section__container">
+        <div class="section__header">
+          <span>Skills</span>
+          <h2>Technical Expertise</h2>
+        </div>
+        <div class="skills__grid">
+          <article class="skill glass">
+            <h3>HTML & CSS</h3>
+            <div class="skill__bar"><div class="skill__progress" data-progress="95"></div></div>
+          </article>
+          <article class="skill glass">
+            <h3>JavaScript</h3>
+            <div class="skill__bar"><div class="skill__progress" data-progress="90"></div></div>
+          </article>
+          <article class="skill glass">
+            <h3>Responsive Design</h3>
+            <div class="skill__bar"><div class="skill__progress" data-progress="93"></div></div>
+          </article>
+          <article class="skill glass">
+            <h3>React</h3>
+            <div class="skill__bar"><div class="skill__progress" data-progress="85"></div></div>
+          </article>
+          <article class="skill glass">
+            <h3>Performance</h3>
+            <div class="skill__bar"><div class="skill__progress" data-progress="88"></div></div>
+          </article>
+          <article class="skill glass">
+            <h3>UI / UX</h3>
+            <div class="skill__bar"><div class="skill__progress" data-progress="90"></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="education section" id="education">
+      <div class="container section__container">
+        <div class="section__header">
+          <span>Education</span>
+          <h2>Academic Journey</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item glass">
+            <span class="timeline__date">2022 - 2024</span>
+            <h3>Advanced Web Development Bootcamp</h3>
+            <p>Completed a focused program in frontend development, JavaScript, version control, and modern UI patterns.</p>
+          </article>
+          <article class="timeline__item glass">
+            <span class="timeline__date">2018 - 2022</span>
+            <h3>Bachelor of Computer Science</h3>
+            <p>Studied software engineering, data structures, web systems, and user experience design.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container section__container">
+        <div class="section__header">
+          <span>Projects</span>
+          <h2>Featured Work</h2>
+        </div>
+        <div class="projects__grid">
+          <article class="project glass">
+            <div class="project__content">
+              <h3>Portfolio Website</h3>
+              <p>A responsive portfolio built with HTML, CSS, and JavaScript that highlights projects, skills, and contact details.</p>
+            </div>
+            <div class="project__buttons">
+              <a href="#" class="button button--small" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="button button--small button--outline" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </article>
+          <article class="project glass">
+            <div class="project__content">
+              <h3>E-commerce UI</h3>
+              <p>An engaging storefront interface with product cards, a shopping cart experience, and mobile-friendly layout.</p>
+            </div>
+            <div class="project__buttons">
+              <a href="#" class="button button--small" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="button button--small button--outline" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </article>
+          <article class="project glass">
+            <div class="project__content">
+              <h3>Dashboard App</h3>
+              <p>A clean analytics dashboard using charts, cards, and realtime UI patterns for modern admin workflows.</p>
+            </div>
+            <div class="project__buttons">
+              <a href="#" class="button button--small" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="button button--small button--outline" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience">
+      <div class="container section__container">
+        <div class="section__header">
+          <span>Experience</span>
+          <h2>Industry Roles</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item glass">
+            <span class="timeline__date">2024 - Present</span>
+            <h3>Frontend Developer Intern</h3>
+            <p>Collaborated on web applications, optimized page performance, and implemented UI improvements for a SaaS product.</p>
+          </article>
+          <article class="timeline__item glass">
+            <span class="timeline__date">2023 - 2024</span>
+            <h3>Junior Web Designer</h3>
+            <p>Designed landing pages, created prototypes, and ensured mobile responsiveness for small business websites.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="certifications section" id="certifications">
+      <div class="container section__container">
+        <div class="section__header">
+          <span>Certifications</span>
+          <h2>Recognized Achievements</h2>
+        </div>
+        <div class="certifications__grid">
+          <article class="certification glass">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>JavaScript Certification</h3>
+            <p>Demonstrated proficiency in modern JavaScript fundamentals and DOM interactions.</p>
+          </article>
+          <article class="certification glass">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>Responsive Design</h3>
+            <p>Validated capabilities in mobile-first design, flex layouts, and cross-device compatibility.</p>
+          </article>
+          <article class="certification glass">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>UI/UX Fundamentals</h3>
+            <p>Proved understanding of accessible interfaces, visual hierarchy, and user-centered workflows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container section__container">
+        <div class="section__header">
+          <span>Services</span>
+          <h2>What I Offer</h2>
+        </div>
+        <div class="services__grid">
+          <article class="service glass">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Web Development</h3>
+            <p>Building responsive, accessible websites using modern frontend standards and best practices.</p>
+          </article>
+          <article class="service glass">
+            <i class="fa-solid fa-pencil-ruler"></i>
+            <h3>UI/UX Design</h3>
+            <p>Designing polished interfaces with user flows, visual clarity, and strong conversion focus.</p>
+          </article>
+          <article class="service glass">
+            <i class="fa-solid fa-rocket"></i>
+            <h3>Performance Optimization</h3>
+            <p>Improving page speed, load times, and interaction responsiveness for seamless browsing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section" id="testimonials">
+      <div class="container section__container">
+        <div class="section__header">
+          <span>Testimonials</span>
+          <h2>Client Feedback</h2>
+        </div>
+        <div class="testimonials__grid">
+          <article class="testimonial glass">
+            <p>"Exceptional work ethic and attention to detail. Delivered a polished landing page ahead of schedule."</p>
+            <h3>Emily Carter</h3>
+            <span>Project Manager</span>
+          </article>
+          <article class="testimonial glass">
+            <p>"The website experience is clean and professional. Communication was clear and progress was steady."</p>
+            <h3>Michael Lee</h3>
+            <span>Startup Founder</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container section__container">
+        <div class="section__header">
+          <span>Contact</span>
+          <h2>Let's build something together</h2>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__info glass">
+            <h3>Get in Touch</h3>
+            <p>Ready to discuss your project, internship opportunity, or collaboration? Send a message and I will respond promptly.</p>
+            <div class="contact__cards">
+              <div class="contact__card">
+                <i class="fa-solid fa-envelope"></i>
+                <h4>Email</h4>
+                <p>hello@example.com</p>
+              </div>
+              <div class="contact__card">
+                <i class="fa-solid fa-map-marker-alt"></i>
+                <h4>Location</h4>
+                <p>Remote / City</p>
+              </div>
+              <div class="contact__card">
+                <i class="fa-solid fa-phone"></i>
+                <h4>Phone</h4>
+                <p>+123 456 7890</p>
+              </div>
+            </div>
+          </div>
+          <form action="#" class="contact__form glass" id="contact-form">
+            <div class="form__group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email" required />
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit" class="button button--primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a href="#home" class="scroll-top" id="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-chevron-up"></i></a>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <p>&copy; 2026 Your Name. Designed with modern web standards for internship-ready presentation.</p>
+      <div class="footer__links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
